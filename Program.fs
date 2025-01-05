@@ -2,25 +2,15 @@
 open Fable.Core
 open Fable.Core.JsInterop
 open Phaser
-
-let assetPath = "./assets/CARDS/"
-
-
-let path = assetPath + "Diamonds_ACE.png"
-
-[<Import("loadImage","./Interop.js")>]
-let loadImage this id path = jsNative
-
-let p this =
-    printfn "PRELOADING !!!!"
-    loadImage this "stuff" path
+open Load
 
 
 [<Import("addImage","./Interop.js")>]
-let addImage this x y path = jsNative
+let addImage this x y id = jsNative
 
 let c this =
-    addImage this 400 400 "stuff"
+    let c = {rank=Face(Queen);suit=Clubs}
+    c |> cardToId |> addImage this 400 400
 
 let u this time delta = ()
 
