@@ -1,0 +1,9 @@
+assets/
+fable_modules/
+node_modules/
+obj/
+bin/
+.config/
+
+*.fs.js
+package-lock.json

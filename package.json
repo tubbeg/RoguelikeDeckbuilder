@@ -1,0 +1,22 @@
+{
+  "name": "roguelikedeckbuilder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "dotnet fable watch --verbose --run npx vite",
+    "build": "dotnet fable"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "miniplex": "^2.0.0",
+    "phaser": "^3.87.0",
+    "uuid": "^11.0.4"
+  }
+}
